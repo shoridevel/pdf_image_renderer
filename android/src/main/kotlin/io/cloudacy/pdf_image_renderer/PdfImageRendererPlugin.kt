@@ -180,7 +180,7 @@ class PdfImageRendererPlugin: FlutterPlugin, MethodCallHandler {
       page.close()
       openPDFPages.remove(id)
 
-      result.success(page)
+      result.success(id)
     } catch (e: Exception) {
       result.error("EXECUTION_ERROR", e.message, null)
     }
